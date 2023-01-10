@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itemDetailContext" prefHeight="400.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anjanatec.pos.controller.ItemDetailFormController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToHomeOnAction" style="-fx-background-color: #2c3e50;" text="Back to Home" textFill="#bdc3c7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblItem" layoutX="6.0" layoutY="72.0" prefHeight="323.0" prefWidth="497.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="141.0" text="Item code" />
+          <TableColumn fx:id="colUnitPrice" prefWidth="143.0" text="Unit price" />
+            <TableColumn fx:id="colQty" prefWidth="100.0" text="Qty" />
+            <TableColumn fx:id="colTotal" prefWidth="111.0" text="Total" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

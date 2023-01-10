@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="itemsFormContext" prefHeight="419.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anjanatec.pos.controller.Itrmformcontroller">
+   <children>
+      <Button layoutX="15.0" layoutY="42.0" mnemonicParsing="false" onAction="#backToHomeOnAction" prefHeight="22.0" prefWidth="89.0" style="-fx-background-color: #2c3e50;" text="Back to home" textFill="#ecf0f1" />
+      <Label layoutX="153.0" layoutY="38.0" prefHeight="30.0" prefWidth="189.0" text="Item Form" textFill="#34495e">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="475.0" layoutY="42.0" mnemonicParsing="false" onAction="#newItemOnAction" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #16a085;" text="+ New Item" textFill="#ecf0f1" />
+      <TextField fx:id="txtCode" layoutX="15.0" layoutY="112.0" prefHeight="27.0" prefWidth="127.0" promptText="Code">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUnitPrice" layoutX="301.0" layoutY="112.0" prefHeight="27.0" prefWidth="127.0" promptText="Unit price">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDescription" layoutX="153.0" layoutY="112.0" prefHeight="27.0" prefWidth="127.0" promptText="Description">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtQtyOnHand" layoutX="453.0" layoutY="112.0" prefHeight="27.0" prefWidth="127.0" promptText="QTY on Hand">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSaveItem" layoutX="475.0" layoutY="160.0" mnemonicParsing="false" onAction="#saveItemOnAction" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #2980b9;" text="Save Item" textFill="#ecf0f1" />
+      <TextField fx:id="txtSearch" layoutX="15.0" layoutY="159.0" prefHeight="27.0" prefWidth="431.0" promptText="Search Item">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblItem" layoutX="15.0" layoutY="196.0" prefHeight="200.0" prefWidth="574.0">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="89.0" text="Code" />
+            <TableColumn fx:id="colDescription" prefWidth="105.0" text="Description" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="114.0" text="Unit Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="138.0" text="QTY on hand" />
+            <TableColumn fx:id="colOption" prefWidth="126.0" text="Option" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
